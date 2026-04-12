@@ -25,8 +25,8 @@
             width: 220px; 
             font-size: 11px;
         }
-        .legend b { font-size: 12px; display: block; margin-bottom: 8px; border-bottom: 2px solid #eee; color: #2c3e50; line-height: 1.4; }
-        .legend span { cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 2px 5px; border-radius: 3px; }
+        .legend b.title { font-size: 12px; display: block; margin-bottom: 8px; border-bottom: 2px solid #eee; color: #2c3e50; line-height: 1.4; }
+        .legend span { cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 2px 5px; border-radius: 3px; font-weight: bold; } /* Ajout du gras ici */
         .legend span:hover { background: #f0f0f0; }
     </style>
 </head>
@@ -188,11 +188,11 @@ function ajouterLegendes() {
         "SCIABBARRASI RENT", "RFM", "ATPL CASELAS"
     ];
     
-    // GAUCHE : G2 Fournitures
+    // GAUCHE : G2
     var legendLeft = L.control({position: 'bottomleft'});
     legendLeft.onAdd = function() {
         var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML = `<b>G2: Fournitures<br>Marquage / Balisage<br>Matériel blanc<br>Matériel noir<br>Pierres naturelles</b>`;
+        div.innerHTML = `<b class="title">G2 : Fournitures / Marquage / Balisage / Matériel</b>`;
         Object.keys(codesCouleurs).sort().forEach(f => {
             if (listeGauche.includes(f)) {
                 var span = document.createElement("span");
@@ -205,11 +205,11 @@ function ajouterLegendes() {
     };
     legendLeft.addTo(map);
 
-    // DROITE : G1 Engins
+    // DROITE : G1
     var legendRight = L.control({position: 'bottomright'});
     legendRight.onAdd = function() {
         var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML = `<b>G1: Petits engins<br>Béton<br>Grands engins<br>Recyclage des matériaux</b>`;
+        div.innerHTML = `<b class="title">G1 : Engins grands / petits & Recyclage</b>`;
         Object.keys(codesCouleurs).sort().forEach(f => {
             if (listeDroite.includes(f)) {
                 var span = document.createElement("span");
