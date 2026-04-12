@@ -54,7 +54,6 @@
 var map = L.map('map').setView([48.85, 2.35], 9);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-// Cadre noir pour délimiter l'Île-de-France
 var boundsIdF = [[48.12, 1.44], [49.24, 3.56]];
 L.rectangle(boundsIdF, {color: "#000000", weight: 2, fill: false, interactive: false}).addTo(map);
 
@@ -62,7 +61,6 @@ var markers = [];
 var villesCoords = {};
 var cercleRayon = null;
 
-// Couleurs foncées synchronisées
 var codesCouleurs = {
     "ATPL CASELAS": "#1a5276", "BSM": "#922b21", "Bouvelot TP": "#1d8348", 
     "CAUPAMAT CADENZ": "#7d3c98", "CHEUTIN": "#af601a", "COLBER": "#212f3d",
@@ -75,7 +73,6 @@ var codesCouleurs = {
     "UTD": "#145a32", "VIACOV": "#7b241c", "YPREMA": "#212f3c"
 };
 
-// Map pour les icônes Leaflet (utilisant les marqueurs de couleurs disponibles)
 var leafletIconMap = {
     "#003399": "blue", "#cc0000": "red", "#006600": "green", "#000000": "black",
     "#424949": "grey", "#7d3c98": "violet", "#af601a": "orange", "#7e5109": "yellow"
@@ -131,8 +128,24 @@ fetch("data.csv")
                     if (p) prodSet.add(p);
 
                     let hex = codesCouleurs[f] || "#1f77b4";
+                    
+                    // Mise à jour de la bulle d'info (Popup)
+                    let popupContent = `
+                        <div style="line-height:1.6;">
+                            <b>Fournisseur :</b> ${f}<br>
+                            <b>Nom de l'agence :</b> ${row["Nom de l'agence"] || ""}<br>
+                            <b>Adresse :</b> ${row["adresse complete"] || ""}<br>
+                            <b>CP :</b> ${cp}<br>
+                            <b>Ville :</b> ${v}<br>
+                            <b>Région :</b> ${row["region"] || ""}<br>
+                            <b>Pays :</b> ${row["Pays"] || ""}<br>
+                            <b>Produit :</b> ${p}<br>
+                            <b>Email :</b> <a href="mailto:${row["Email"]}">${row["Email"] || ""}</a>
+                        </div>
+                    `;
+
                     let m = L.marker([latF, lngF], { icon: getIcon(hex) })
-                             .bindPopup(`<b>${f}</b><br>Agence: ${row["Nom de l'agence"]}<br>${cp} ${v}<br>Produit: ${p}`);
+                             .bindPopup(popupContent);
                     
                     m.data = { f, v, cp, p, lat: latF, lng: lngF };
                     m.addTo(map);
