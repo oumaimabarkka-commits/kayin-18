@@ -2,7 +2,7 @@
 <html lang="fr"> 
 <head>
     <meta charset="utf-8"/>
-    <title>Carte Fournisseurs & Référentiel Villes</title>
+    <title>Carte Fournisseurs Île-de-France</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 15px; background: #f4f4f4; }
@@ -34,7 +34,7 @@
 
 <div class="header">
     <img src="logo.png" alt="Logo">
-    <h2>Carte Fournisseurs & Référentiel Villes</h2>
+    <h2>Carte Fournisseurs Île-de-France</h2>
 </div>
 
 <div class="filters">
@@ -108,42 +108,43 @@ fetch("data.csv")
                 let frsSet = new Set(), villeSet = new Set(), cpSet = new Set(), prodSet = new Set();
                 
                 results.data.forEach(row => {
-                    // Lecture des données
+                    // Extraction et nettoyage
                     let f = row["fournisseur"]?.trim();
                     let v = row["ville"]?.trim();
                     let cp = row["CP"]?.trim();
                     let p = (row["Produit"] || row["Produit "])?.trim();
-                    
                     let latF = parseFloat(row["latitude (fournisseur)"]?.replace(",", "."));
                     let lngF = parseFloat(row["longitude (fournisseur)"]?.replace(",", "."));
                     let latV = parseFloat(row["Latitude ville"]?.replace(",", "."));
                     let lngV = parseFloat(row["Longitude ville"]?.replace(",", "."));
 
-                    // 1. Enrichissement systématique de la liste Ville si coordonnées ville présentes
+                    // 1. GESTION DU RÉFÉRENTIEL VILLE (S'affiche dans la liste même si le reste est vide)
                     if (v && v !== "-" && !isNaN(latV)) {
                         villeSet.add(v);
                         villesCoords[normalize(v)] = [latV, lngV];
                     }
 
-                    // 2. Vérification : Si c'est juste une info ville (fournisseur vide ou "-")
-                    // On s'arrête là pour cette ligne (pas de marker, pas d'autres filtres)
-                    if (!f || f === "-" || isNaN(latF)) {
-                        return; 
+                    // 2. CONDITION STRICTE POUR LES MARQUEURS ET LES AUTRES FILTRES
+                    // On ne crée rien si le fournisseur est vide OU si ses coordonnées sont absentes
+                    if (!f || f === "-" || isNaN(latF) || isNaN(lngF)) {
+                        return; // On arrête ici pour cette ligne
                     }
 
-                    // 3. Si on arrive ici, c'est un vrai fournisseur avec coordonnées
+                    // 3. ENRICHISSEMENT DES AUTRES FILTRES (Seulement si fournisseur valide)
                     frsSet.add(f);
                     if (cp && cp !== "-") cpSet.add(cp);
                     if (p && p !== "-") prodSet.add(p);
 
+                    // 4. CRÉATION DU MARQUEUR
                     let hex = codesCouleurs[f] || "#1f77b4";
                     let popupContent = `
                         <div style="line-height:1.6;">
                             <b>Fournisseur :</b> ${f}<br>
+                            <b>Agence :</b> ${row["Nom de l'agence"] || ""}<br>
                             <b>Adresse :</b> ${row["adresse complete"] || ""}<br>
-                            <b>CP :</b> ${cp}<br>
-                            <b>Ville :</b> ${v}<br>
+                            <b>Ville :</b> ${v} (${cp})<br>
                             <b>Produit :</b> ${p || ""}<br>
+                            <b>Email :</b> <a href="mailto:${row["Email"]}">${row["Email"] || ""}</a>
                         </div>
                     `;
 
@@ -234,7 +235,6 @@ function filtrer() {
 
         if (centre) {
             let dist = getDistance(centre[0], centre[1], d.lat, d.lng);
-            // On affiche si c'est la ville exacte OU si c'est dans le rayon
             if (normalize(d.v) !== ville && dist > rayon) match = false;
         } else if (ville && normalize(d.v) !== ville) {
             match = false;
