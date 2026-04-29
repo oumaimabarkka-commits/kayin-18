@@ -22,18 +22,27 @@
             line-height: 22px; 
             max-height: 500px; 
             overflow-y: auto; 
-            width: 220px; 
+            width: 260px; 
             font-size: 11px;
         }
-        .legend b.title { font-size: 12px; display: block; margin-bottom: 8px; border-bottom: 2px solid #eee; color: #2c3e50; line-height: 1.4; }
-        .legend span { cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 2px 5px; border-radius: 3px; font-weight: bold; }
+        .legend b.title { 
+            font-size: 12px; 
+            display: block; 
+            margin-bottom: 8px; 
+            border-bottom: 2px solid #eee; 
+            color: red; 
+            line-height: 1.4; 
+        }
+        .legend span { cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 3px 5px; border-radius: 3px; font-weight: bold; }
         .legend span:hover { background: #f0f0f0; }
+        .legend-logo { width: 20px; height: 20px; object-fit: contain; border-radius: 2px; background: white; border: 1px solid #f0f0f0; }
+        .legend-color-box { display: inline-block; width: 16px; height: 16px; border-radius: 3px; border: 1px solid #999; }
     </style>
 </head>
 <body>
 
 <div class="header">
-    <img src="logo.png" alt="Logo">
+    <img src="logo.png" alt="Logo" onerror="this.style.display='none'">
     <h2>Carte Fournisseurs Île-de-France</h2>
 </div>
 
@@ -44,11 +53,11 @@
     <select id="filtreProduit" onchange="filtrer()"><option value="">Produit : Tous</option></select>
 
     <div class="range-box">
-        Rayon : <input type="range" id="filtreRayon" min="0" max="200" value="0" oninput="document.getElementById('rayonVal').innerText = this.value; filtrer();">
+        Rayon : <input type="range" id="filtreRayon" min="0" max="50" value="0" oninput="document.getElementById('rayonVal').innerText = this.value; filtrer();">
         <span id="rayonVal">0</span> km
     </div>
 
-    <button onclick="location.reload()" style="background:#ff7675; color:white; border:none; padding:8px 15px; border-radius:4px; cursor:pointer;">Reset</button>
+    <button onclick="window.location.reload()" style="background:#ff7675; color:white; border:none; padding:8px 15px; border-radius:4px; cursor:pointer;">Réinitialiser</button>
 </div>
 
 <div id="map"></div>
@@ -59,6 +68,10 @@
 <script>
 var map = L.map('map').setView([48.85, 2.35], 9);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+// Limites IDF
+var boundsIdF = [[48.12, 1.44], [49.24, 3.56]];
+L.rectangle(boundsIdF, {color: "#000000", weight: 2, fill: false, interactive: false}).addTo(map);
 
 var markers = [];
 var villesCoords = {};
@@ -76,8 +89,22 @@ var codesCouleurs = {
     "UTD": "#145a32", "VIACOV": "#7b241c", "YPREMA": "#212f3c", "Cemex": "#5D6D7E"
 };
 
+var logosMap = {
+    "Loxam": "https://loxam.com/wp-content/uploads/2022/08/logo-loxam-rental.png",
+    "Point P": "Point P.png",
+    "Raboni": "https://produits.batiactu.com/img/indus_auto/350-350-c/20200422_160646-raboni_2020.jpg",
+    "Cemex": "https://findlogovector.com/wp-content/uploads/2018/12/cemex-logo-vector.png",
+    "pum": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUeL7T4H-li-LTHqo0R5zvuokh7v_im9x02g&s",
+    "Fransbonhomme": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW9mK52-rP1Y7Z6Gg6h3bYl5v6X8vY5-L7Ag&s"
+};
+
+var leafletIconMap = {
+    "#003399": "blue", "#cc0000": "red", "#006600": "green", "#000000": "black",
+    "#424949": "grey", "#7d3c98": "violet", "#af601a": "orange", "#7e5109": "yellow",
+    "#1a5276": "blue", "#922b21": "red", "#1d8348": "green", "#212f3d": "black"
+};
+
 function getIcon(hex) {
-    let leafletIconMap = {"#003399": "blue", "#cc0000": "red", "#006600": "green", "#000000": "black", "#424949": "grey", "#7d3c98": "violet", "#af601a": "orange", "#7e5109": "yellow"};
     let colorName = leafletIconMap[hex] || "blue";
     return new L.Icon({
         iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${colorName}.png`,
@@ -102,56 +129,50 @@ fetch("data.csv")
     .then(r => r.text())
     .then(csv => {
         Papa.parse(csv, {
-            header: true, 
-            skipEmptyLines: true,
+            header: true, skipEmptyLines: true,
             complete: function(results) {
                 let frsSet = new Set(), villeSet = new Set(), cpSet = new Set(), prodSet = new Set();
                 
                 results.data.forEach(row => {
-                    // Extraction et nettoyage
                     let f = row["fournisseur"]?.trim();
                     let v = row["ville"]?.trim();
                     let cp = row["CP"]?.trim();
                     let p = (row["Produit"] || row["Produit "])?.trim();
-                    let latF = parseFloat(row["latitude (fournisseur)"]?.replace(",", "."));
-                    let lngF = parseFloat(row["longitude (fournisseur)"]?.replace(",", "."));
+
+                    // --- AJOUT AUX FILTRES (Même si f est vide) ---
+                    if (f) frsSet.add(f);
+                    if (v) villeSet.add(v);
+                    if (cp) cpSet.add(cp);
+                    if (p) prodSet.add(p);
+
+                    // --- COORDONNÉES VILLES (Pour le rayon) ---
                     let latV = parseFloat(row["Latitude ville"]?.replace(",", "."));
                     let lngV = parseFloat(row["Longitude ville"]?.replace(",", "."));
-
-                    // 1. GESTION DU RÉFÉRENTIEL VILLE (S'affiche dans la liste même si le reste est vide)
-                    if (v && v !== "-" && !isNaN(latV)) {
-                        villeSet.add(v);
+                    if (v && !isNaN(latV)) {
                         villesCoords[normalize(v)] = [latV, lngV];
                     }
 
-                    // 2. CONDITION STRICTE POUR LES MARQUEURS ET LES AUTRES FILTRES
-                    // On ne crée rien si le fournisseur est vide OU si ses coordonnées sont absentes
-                    if (!f || f === "-" || isNaN(latF) || isNaN(lngF)) {
-                        return; // On arrête ici pour cette ligne
+                    // --- CRÉATION DU MARQUEUR (Seulement si fournisseur et coordonnées existent) ---
+                    let latF = parseFloat(row["latitude (fournisseur)"]?.replace(",", "."));
+                    let lngF = parseFloat(row["longitude (fournisseur)"]?.replace(",", "."));
+
+                    if (!isNaN(latF) && !isNaN(lngF) && f) {
+                        let hex = codesCouleurs[f] || "#1f77b4";
+                        let popupContent = `
+                            <div style="line-height:1.6;">
+                                <b>Fournisseur :</b> ${f}<br>
+                                <b>Adresse :</b> ${row["adresse complete"] || ""}<br>
+                                <b>CP :</b> ${cp || ""}<br>
+                                <b>Ville :</b> ${v || ""}<br>
+                                <b>Produit :</b> ${p || ""}<br>
+                                <b>Email :</b> <a href="mailto:${row["Email"]}">${row["Email"] || ""}</a>
+                            </div>`;
+
+                        let m = L.marker([latF, lngF], { icon: getIcon(hex) }).bindPopup(popupContent);
+                        m.data = { f, v, cp, p, lat: latF, lng: lngF };
+                        m.addTo(map);
+                        markers.push(m);
                     }
-
-                    // 3. ENRICHISSEMENT DES AUTRES FILTRES (Seulement si fournisseur valide)
-                    frsSet.add(f);
-                    if (cp && cp !== "-") cpSet.add(cp);
-                    if (p && p !== "-") prodSet.add(p);
-
-                    // 4. CRÉATION DU MARQUEUR
-                    let hex = codesCouleurs[f] || "#1f77b4";
-                    let popupContent = `
-                        <div style="line-height:1.6;">
-                            <b>Fournisseur :</b> ${f}<br>
-                            <b>Agence :</b> ${row["Nom de l'agence"] || ""}<br>
-                            <b>Adresse :</b> ${row["adresse complete"] || ""}<br>
-                            <b>Ville :</b> ${v} (${cp})<br>
-                            <b>Produit :</b> ${p || ""}<br>
-                            <b>Email :</b> <a href="mailto:${row["Email"]}">${row["Email"] || ""}</a>
-                        </div>
-                    `;
-
-                    let m = L.marker([latF, lngF], { icon: getIcon(hex) }).bindPopup(popupContent);
-                    m.data = { f, v, cp, p, lat: latF, lng: lngF };
-                    m.addTo(map);
-                    markers.push(m);
                 });
 
                 remplirSelect("filtreNom", frsSet, "Fournisseur");
@@ -167,29 +188,30 @@ function remplirSelect(id, set, label) {
     let s = document.getElementById(id);
     s.innerHTML = `<option value="">${label} : Tous</option>`;
     Array.from(set).sort().forEach(v => {
-        if(v && v !== "-") {
-            let o = document.createElement("option"); o.value = v; o.textContent = v;
-            s.appendChild(o);
-        }
+        let o = document.createElement("option"); o.value = v; o.textContent = v;
+        s.appendChild(o);
     });
 }
 
 function ajouterLegendes() {
-    var listeGauche = ["Point P", "Raboni", "CAUPAMAT CADENZ", "Tersen", "pum", "YPREMA", "Fransbonhomme", "SODEXTRA", "SPME", "Bouvelot TP", "SNB", "EVA INDUSTRIES", "LM DISTRIBUTION", "IDF MARQUAGE", "EUROPIERRE"];
-    var listeDroite = ["Loxam", "Cemex", "BSM", "COLBER", "SOL 78", "VIACOV", "CHEUTIN", "GO POMPE", "EVO LOCATION", "UTD", "SCIABBARRASI RENT", "RFM", "ATPL CASELAS"];
+    var listeG2 = ["Point P", "Raboni", "CAUPAMAT CADENZ", "Tersen", "pum", "YPREMA", "Fransbonhomme", "SODEXTRA", "SPME", "Bouvelot TP", "SNB", "EVA INDUSTRIES", "LM DISTRIBUTION", "IDF MARQUAGE", "EUROPIERRE"];
+    var listeG1 = ["Loxam", "Cemex", "BSM", "COLBER", "SOL 78", "VIACOV", "CHEUTIN", "GO POMPE", "EVO LOCATION", "UTD", "SCIABBARRASI RENT", "RFM", "ATPL CASELAS"];
     
+    function createLegendItem(f) {
+        var span = document.createElement("span");
+        let iconHtml = logosMap[f] 
+            ? `<img src="${logosMap[f]}" class="legend-logo" onerror="this.outerHTML='<div class=\'legend-color-box\' style=\'background:${codesCouleurs[f]}\'></div>'">`
+            : `<div class="legend-color-box" style="background:${codesCouleurs[f] || '#ccc'}"></div>`;
+        span.innerHTML = `${iconHtml} ${f}`;
+        span.onclick = () => { document.getElementById("filtreNom").value = f; filtrer(); };
+        return span;
+    }
+
     var legendLeft = L.control({position: 'bottomleft'});
     legendLeft.onAdd = function() {
         var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML = `<b class="title">G2 : Fournitures / Matériel</b>`;
-        listeGauche.sort().forEach(f => {
-            if (codesCouleurs[f]) {
-                var span = document.createElement("span");
-                span.innerHTML = `<b style="color:${codesCouleurs[f]}">&#9632;</b> ${f}`;
-                span.onclick = () => { document.getElementById("filtreNom").value = f; filtrer(); };
-                div.appendChild(span);
-            }
-        });
+        div.innerHTML = `<b class="title">G2 : Fournitures / Marquage / Matériel</b>`;
+        listeG2.sort().forEach(f => { if (codesCouleurs[f]) div.appendChild(createLegendItem(f)); });
         return div;
     };
     legendLeft.addTo(map);
@@ -198,14 +220,7 @@ function ajouterLegendes() {
     legendRight.onAdd = function() {
         var div = L.DomUtil.create('div', 'legend');
         div.innerHTML = `<b class="title">G1 : Engins & Recyclage</b>`;
-        listeDroite.sort().forEach(f => {
-            if (codesCouleurs[f]) {
-                var span = document.createElement("span");
-                span.innerHTML = `<b style="color:${codesCouleurs[f]}">&#9632;</b> ${f}`;
-                span.onclick = () => { document.getElementById("filtreNom").value = f; filtrer(); };
-                div.appendChild(span);
-            }
-        });
+        listeG1.sort().forEach(f => { if (codesCouleurs[f]) div.appendChild(createLegendItem(f)); });
         return div;
     };
     legendRight.addTo(map);
@@ -229,17 +244,18 @@ function filtrer() {
     markers.forEach(m => {
         let d = m.data;
         let match = true;
+
         if (nom && normalize(d.f) !== nom) match = false;
         if (cp && normalize(d.cp) !== cp) match = false;
         if (prod && normalize(d.p) !== prod) match = false;
 
-        if (centre) {
+        if (centre && rayon > 0) {
             let dist = getDistance(centre[0], centre[1], d.lat, d.lng);
-            if (normalize(d.v) !== ville && dist > rayon) match = false;
+            if (dist > rayon) match = false;
         } else if (ville && normalize(d.v) !== ville) {
             match = false;
         }
-        
+
         if (match) m.addTo(map); else map.removeLayer(m);
     });
 }
