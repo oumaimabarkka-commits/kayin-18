@@ -2,7 +2,7 @@
 <html lang="fr"> 
 <head>
     <meta charset="utf-8"/>
-    <title>Carte Fournisseurs & Villes Île-de-France</title>
+    <title>Carte Fournisseurs & Référentiel Villes</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 15px; background: #f4f4f4; }
@@ -34,7 +34,7 @@
 
 <div class="header">
     <img src="logo.png" alt="Logo">
-    <h2>Carte Fournisseurs & Villes Île-de-France</h2>
+    <h2>Carte Fournisseurs & Référentiel Villes</h2>
 </div>
 
 <div class="filters">
@@ -73,15 +73,11 @@ var codesCouleurs = {
     "pum": "#000000", "Raboni": "#006600", "RFM": "#330033",
     "SODEXTRA": "#003333", "SNB": "#333300", "SOL 78": "#424949",
     "SPME": "#154360", "SCIABBARRASI RENT": "#512e5f", "Tersen": "#7e5109",
-    "UTD": "#145a32", "VIACOV": "#7b241c", "YPREMA": "#212f3c", "Cemex": "#5D6D7E",
-    "Non spécifié": "#aeb6bf"
+    "UTD": "#145a32", "VIACOV": "#7b241c", "YPREMA": "#212f3c", "Cemex": "#5D6D7E"
 };
 
 function getIcon(hex) {
-    let leafletIconMap = {
-        "#003399": "blue", "#cc0000": "red", "#006600": "green", "#000000": "black",
-        "#424949": "grey", "#7d3c98": "violet", "#af601a": "orange", "#7e5109": "yellow"
-    };
+    let leafletIconMap = {"#003399": "blue", "#cc0000": "red", "#006600": "green", "#000000": "black", "#424949": "grey", "#7d3c98": "violet", "#af601a": "orange", "#7e5109": "yellow"};
     let colorName = leafletIconMap[hex] || "blue";
     return new L.Icon({
         iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${colorName}.png`,
@@ -112,51 +108,47 @@ fetch("data.csv")
                 let frsSet = new Set(), villeSet = new Set(), cpSet = new Set(), prodSet = new Set();
                 
                 results.data.forEach(row => {
-                    // Extraction des coordonnées avec gestion des virgules françaises
+                    // Lecture des données
+                    let f = row["fournisseur"]?.trim();
+                    let v = row["ville"]?.trim();
+                    let cp = row["CP"]?.trim();
+                    let p = (row["Produit"] || row["Produit "])?.trim();
+                    
                     let latF = parseFloat(row["latitude (fournisseur)"]?.replace(",", "."));
                     let lngF = parseFloat(row["longitude (fournisseur)"]?.replace(",", "."));
                     let latV = parseFloat(row["Latitude ville"]?.replace(",", "."));
                     let lngV = parseFloat(row["Longitude ville"]?.replace(",", "."));
 
-                    // LOGIQUE DE REPLI : Si pas de coord fournisseur, on prend la ville
-                    let finalLat = !isNaN(latF) ? latF : latV;
-                    let finalLng = !isNaN(lngF) ? lngF : lngV;
+                    // 1. Enrichissement systématique de la liste Ville si coordonnées ville présentes
+                    if (v && v !== "-" && !isNaN(latV)) {
+                        villeSet.add(v);
+                        villesCoords[normalize(v)] = [latV, lngV];
+                    }
 
-                    // Si vraiment aucune coordonnée, on ignore la ligne
-                    if (isNaN(finalLat) || isNaN(finalLng)) return;
+                    // 2. Vérification : Si c'est juste une info ville (fournisseur vide ou "-")
+                    // On s'arrête là pour cette ligne (pas de marker, pas d'autres filtres)
+                    if (!f || f === "-" || isNaN(latF)) {
+                        return; 
+                    }
 
-                    // Nettoyage des noms (si "-" ou vide -> "Non spécifié")
-                    let f = row["fournisseur"]?.trim();
-                    if (!f || f === "-") f = "Non spécifié";
-                    
-                    let v = row["ville"]?.trim() || "Inconnue";
-                    let cp = row["CP"]?.trim() || "-";
-                    let p = (row["Produit"] || row["Produit "])?.trim();
-                    if (!p || p === "-") p = "Non spécifié";
-
+                    // 3. Si on arrive ici, c'est un vrai fournisseur avec coordonnées
                     frsSet.add(f);
-                    villeSet.add(v);
-                    cpSet.add(cp);
-                    prodSet.add(p);
-
-                    if (!isNaN(latV)) villesCoords[normalize(v)] = [latV, lngV];
+                    if (cp && cp !== "-") cpSet.add(cp);
+                    if (p && p !== "-") prodSet.add(p);
 
                     let hex = codesCouleurs[f] || "#1f77b4";
-                    
                     let popupContent = `
                         <div style="line-height:1.6;">
                             <b>Fournisseur :</b> ${f}<br>
-                            <b>Ville :</b> ${v}<br>
+                            <b>Adresse :</b> ${row["adresse complete"] || ""}<br>
                             <b>CP :</b> ${cp}<br>
-                            <b>Produit :</b> ${p}<br>
-                            <b>Région :</b> ${row["region"] || ""}<br>
+                            <b>Ville :</b> ${v}<br>
+                            <b>Produit :</b> ${p || ""}<br>
                         </div>
                     `;
 
-                    let m = L.marker([finalLat, finalLng], { icon: getIcon(hex) })
-                             .bindPopup(popupContent);
-                    
-                    m.data = { f, v, cp, p, lat: finalLat, lng: finalLng };
+                    let m = L.marker([latF, lngF], { icon: getIcon(hex) }).bindPopup(popupContent);
+                    m.data = { f, v, cp, p, lat: latF, lng: lngF };
                     m.addTo(map);
                     markers.push(m);
                 });
@@ -174,8 +166,10 @@ function remplirSelect(id, set, label) {
     let s = document.getElementById(id);
     s.innerHTML = `<option value="">${label} : Tous</option>`;
     Array.from(set).sort().forEach(v => {
-        let o = document.createElement("option"); o.value = v; o.textContent = v;
-        s.appendChild(o);
+        if(v && v !== "-") {
+            let o = document.createElement("option"); o.value = v; o.textContent = v;
+            s.appendChild(o);
+        }
     });
 }
 
@@ -240,6 +234,7 @@ function filtrer() {
 
         if (centre) {
             let dist = getDistance(centre[0], centre[1], d.lat, d.lng);
+            // On affiche si c'est la ville exacte OU si c'est dans le rayon
             if (normalize(d.v) !== ville && dist > rayon) match = false;
         } else if (ville && normalize(d.v) !== ville) {
             match = false;
