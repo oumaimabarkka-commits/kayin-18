@@ -1,10 +1,10 @@
 fournisseur	ID_fournisseurs	Nom de l'agence	CP	ville	Latitude ville	Longitude ville	region	Pays	adresse complete	latitude (fournisseur)	longitude (fournisseur)	Email	Produit 
 Loxam 	Lo	Corner Loxam - Starmat ADMC	91000	Avrainville	48,5623782	2,247154	Île-de-France	France 	Route Departementale 449, 91630, France	48.560433	2.282966	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam Rental Fontenay Tresigny	77000	Fontenay-Tresigny	48,7100369	2,8722456	Île-de-France	France 	Z.A.E. Fregy, 77610, France	48.702312	2.88131	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam Rental Fontenay Tresigny	77000	Fontenay-Trésigny	48,7100369	2,8722456	Île-de-France	France 	Z.A.E. Fregy, 77610, France	48.702312	2.88131	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Cremaillères Loxam Laho Tec	93000	Bobigny	48,906387	2,4452231	Île-de-France	France 	109, rue Benoit Frachon, 93000, France	48.901568	2.429485	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Access Paris Nord Aulnay	93000	AULNAY SOUS BOIS	48,934231	2,499789	Île-de-France	France 	4 Rue Jean Chaptal - ZI De La Garenne, 93600, France	48.94483056	2.483931887	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Access Paris Sud Chilly	91000	Chilly-mazarin	48,7026161	2,3123582	Île-de-France	France 	14 Bis Rue Denis Papin - ZA La Vigne Aux Loups, 91380, France	48.7084368	2.3040912	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Starmat Le Holloco	95000	Ezanville	49,031707	2,361889	Île-de-France	France 	12 avenue Jean Rostand, 95460, France	49.038003	2.342081	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Starmat Le Holloco	95000	Ézanville	49,031707	2,361889	Île-de-France	France 	12 avenue Jean Rostand, 95460, France	49.038003	2.342081	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Starmat L'Isle Adam	95000	L'Isle Adam	49,1125294	2,2186324	Île-de-France	France 	3 avenue Napoleon 1er, 95290, France	49.127439	2.242507	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Starmat Herblay	95000	Herblay	48,9898588	2,166162	Île-de-France	France 	403 route de conflans, 95220, France	49.00426005	2.1284155	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Republique	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	121 Boulevard Richard Lenoir, 75011, France	48.8656592	2.3692127	mounir.amraoui@loxam.fr	Petits engins
@@ -21,14 +21,14 @@ Loxam 	Lo	Corner Loxam - Gedimat Ecuelles	77000	Ecuelles	48,352101	2,7936471	Îl
 Loxam 	Lo	Corner Loxam - Castorama Villabe	91000	Villabe	48,5885996	2,4544951	Île-de-France	France 	ZAC des Brateaux - 1 rue de la Plaine, 91100, France	48.58842	2.44496	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Bricocash Mormant	77000	Mormant	48,6136858	2,8889649	Île-de-France	France 	rue Lavoisier, 77720, France	48.61365502	2.881806275	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Bricomarche Dourdan	91000	Dourdan	48,5288442	2,0153689	Île-de-France	France 	42 rue Raymond Laubier, 91410, France	48.527135	2.020990597	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Weldom Oncy sur Ecole	91000	Oncy sur Ecole	48,383062	2,4697864	Île-de-France	France 	Grande Rue, 91490, France	48.38881308	2.470104082	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Weldom Oncy sur Ecole	91000	Oncy-sur-École	48,383062	2,4697864	Île-de-France	France 	Grande Rue, 91490, France	48.38881308	2.470104082	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Weldom Breuillet	91000	Breuillet	48,5668797	2,1729461	Île-de-France	France 	2 rue du Buisson Rondeau, 91650, France	48.5687476	2.164083174	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Castorama Melun	77000	Melun	48,539927	2,6608169	Île-de-France	France 	Z.a.c du champs de foire, 77000, France	48.5346163	2.6570682	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Castorama Gonesse	95000	Gonesse	48,9863555	2,4500537	Île-de-France	France 	Z.I. De Paris Nord Ii, 95700, France	49.0764935	2.5613607	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Bricorama Mareuil	77000	Mareuil-les-Meaux	48,9267289	2,8634773	Île-de-France	France 	10 Avenue de la Haute Borne, 77100, France	48.94015741	2.877620849	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam City Sèvres	92000	Sevres	48,8247407	2,2127083	Île-de-France	France 	9 Grande Rue, 92310, France	48.82702	2.222061	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Bricorama Mareuil	77000	Mareuil-lès-Meaux	48,9267289	2,8634773	Île-de-France	France 	10 Avenue de la Haute Borne, 77100, France	48.94015741	2.877620849	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam City Sèvres	92000	Sèvres	48,8247407	2,2127083	Île-de-France	France 	9 Grande Rue, 92310, France	48.82702	2.222061	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Porte d'Asnières	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	204 Boulevard Malesherbes, 75017, France	48.8897729	2.3041953	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam CITY Noisy-Le-Sec	93000	Noisy le Sec	48,8897751	2,4516055	Île-de-France	France 	74 rue de Paris, 93130, France	48.900336	2.452852	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam CITY Noisy-Le-Sec	93000	Noisy-le-Sec	48,8897751	2,4516055	Île-de-France	France 	74 rue de Paris, 93130, France	48.900336	2.452852	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Formation	93000	AULNAY SOUS BOIS	48,934231	2,499789	Île-de-France	France 	2 rue Jean Chaptal - ZI La Garenne, 93600, France	48.945954	2.482742	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Nemours	77000	Nemours	48,2385017	2,7820919	Île-de-France	France 	Route De Lyon, 77140, France	48.3061	2.6841	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Porte de St-Cloud	92000	Boulogne-Billancourt	48,8356649	2,240206	Île-de-France	France 	3 route de la Reine, Manquant, France	48.83853	2.251552	mounir.amraoui@loxam.fr	Petits engins
@@ -36,7 +36,7 @@ Loxam 	Lo	Loxam City Porte de Clignancourt	75000	Paris	48,8534951	2,3483915	Île
 Loxam 	Lo	Loxam City Porte de Brancion	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	3 avenue de la Porte Brancion, 75015, France	48.827449	2.301282	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Batignolles	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	149 rue de Rome, Manquant, France	48.886434	2.31573	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Grenelle	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	95 boulevard de Grenelle, Manquant, France	48.849803	2.296297	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam Rosny sous Bois	93000	Rosny Sous Bois	48,8716626	2,4875193	Île-de-France	France 	89 Boulevard Alsace Lorraine, 93110, France	48.884545	2.484486	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam Rosny sous Bois	93000	Rosny-sous-Bois	48,8716626	2,4875193	Île-de-France	France 	89 Boulevard Alsace Lorraine, 93110, France	48.884545	2.484486	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Morangis	91000	Morangis	48,7022956	2,3367599	Île-de-France	France 	6 avenue Gay Lussac - ZI Val - Angle, 91420, France	48.703696	2.341292	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Montparnasse	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	50 Boulevard Pasteur, 75015, France	48.8413584	2.3134643	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Roissy	95000	Roissy	49,0068908	2,571082	Île-de-France	France 	6 Route De L'arpenteur - Zone Flexitech, 95700, France	49.01207422	2.517416966	mounir.amraoui@loxam.fr	Petits engins
@@ -48,26 +48,26 @@ Loxam 	Lo	Loxam Aulnay sous Bois	93000	AULNAY SOUS BOIS	48,934231	2,499789	Île-
 Loxam 	Lo	Loxam Porte de Bagnolet	93000	Montreuil	48,8623357	2,4412184	Île-de-France	France 	202 Boulevard Chanzy, 93100, France	48.8596602	2.423866	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Mantes La Jolie	78000	Limay	48,9921015	1,7353686	Île-de-France	France 	10 rue Fernand Forest, 78520, France	48.989507	1.757993	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Nanterre	92000	Nanterre	48,8924273	2,2071267	Île-de-France	France 	2 Rue Lavoisier, 92000, France	48.885895	2.23466	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam Velizy	78000	Velizy-villacoublay	48,7809496	2,1900052	Île-de-France	France 	63 Avenue De L'europe, 78140, France	48.7788607	2.2086485	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam Melun Le Mee	77000	Le mee sur seine	48,5408681	2,6262121	Île-de-France	France 	Rue Jean Baptiste Colbert, 77350, France	48.55187172	2.630854392	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam Velizy	78000	Vélizy-Villacoublay	48,7809496	2,1900052	Île-de-France	France 	63 Avenue De L'europe, 78140, France	48.7788607	2.2086485	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam Melun Le Mee	77000	le Mée-sur-Seine	48,5408681	2,6262121	Île-de-France	France 	Rue Jean Baptiste Colbert, 77350, France	48.55187172	2.630854392	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Mr.Bricolage Angerville	91000	Angerville	48,3106704	1,9979775	Île-de-France	France 	8 Rue des Artisans, 91670, France	48.3172994	2.0020053	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Bricomarche Villecresnes	94000	Villecresnes	48,7208822	2,5327265	Île-de-France	France 	54 Rue de Brunoy, 94440, France	48.708269	2.52924	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Bricomarche Maulette	78000	Maulette	48,7914601	1,6207519	Île-de-France	France 	Route de Gambais, 78550, France	48.80028868	1.670401128	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Bricomarche Milly	91000	Milly-la-Forêt	48.4030	2.4643	Île-de-France	France 	ZA du Chenet - 4 Rue Des Ormes, 91490, France	48.39749565	2.419667381	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Leroy Merlin Madeleine	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	Place de La Madeleine, 75008, France	48.87010945	2.323955075	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Mr.Bricolage Achères	78000	Acheres	48,9606321	2,0698106	Île-de-France	France 	Rue W. A. Mozart - ZAC du Chemin neuf, 78260, France	48.971799	2.090038	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Mr.Bricolage Achères	78000	Achères	48,9606321	2,0698106	Île-de-France	France 	Rue W. A. Mozart - ZAC du Chemin neuf, 78260, France	48.971799	2.090038	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Leroy Merlin Rosa Parks	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	159 boulevard Macdonald, 75019, France	48.8989112	2.3770354	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Mr.Bricolage Coulommiers	77000	Coulommiers	48,8204017	3,2494033	Île-de-France	France 	3 Boulevard De La Marne, 77120, France	48.8034528	3.0889484	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Argenteuil	95000	Argenteuil	48,9479069	2,2481797	Île-de-France	France 	176 Route de Pontoise, 95100, France	48.951212	2.205858	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Gennevilliers	92000	Gennevilliers	48,9254221	2,2940122	Île-de-France	France 	89 Rue Des Caboeufs, 92230, France	48.9262372	2.3054767	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam Paris Quai d'Ivry	94000	Ivry Sur Seine	48,8122302	2,3872525	Île-de-France	France 	53 Quai Auguste Deshaies, 94200, France	48.8178909	2.402854	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam Paris Quai d'Ivry	94000	Ivry-sur-Seine	48,8122302	2,3872525	Île-de-France	France 	53 Quai Auguste Deshaies, 94200, France	48.8178909	2.402854	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Epinay / Seine	93000	Epinay sur seine	48,9525181	2,3145039	Île-de-France	France 	129/133 Avenue De Lattre De Tassigny, 93800, France	48.95477636	2.312588608	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Rental Meaux	77000	Meaux	48,9582708	2,8773541	Île-de-France	France 	10 Rue Jacques Daguerre, 77100, France	48.965539	2.915664	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Aubervilliers	93000	Aubervilliers	48,9146078	2,3821895	Île-de-France	France 	55 Bd Felix Faure - Parc du Mauvin, 93300, France	48.903997	2.382632	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Grand Paris	92000	Bagneux	48,795056	2,3027323	Île-de-France	France 	134 avenue Aristide Briand, 92220, France	48.7984257	2.322254	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Rental Goussainville CDG	95000	Goussainville	49,0323168	2,4733628	Île-de-France	France 	87 Bd General De Gaulle, 95190, France	49.02434153	2.472470865	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Rental Ste Geneviève	91000	Ste-Genevieve-des-Bois	48,6407872	2,3259129	Île-de-France	France 	9, rue du Petit Fief - ZAC Croix Blanche, 91700, France	48.623087	2.340174	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Weldom Etampes	91000	etampes	48,4344621	2,1614464	Île-de-France	France 	50 Rue des Lys, 91150, France	48.4404147	2.1368863	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Weldom Etampes	91000	Étampes	48,4344621	2,1614464	Île-de-France	France 	50 Rue des Lys, 91150, France	48.4404147	2.1368863	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Ste Geneviève	91000	Ste-Genevieve-des-Bois	48,6407872	2,3259129	Île-de-France	France 	avenue Des Hurepoix, 91700, France	48.639978	2.341103	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Lognes	77000	Lognes	48,8384157	2,632722	Île-de-France	France 	boulevard Du Segrais, 77185, France	48.83498176	2.653618587	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Montigny	95000	Montigny-lès-Cormeilles	48.98333	2.18333	Île-de-France	France 	45 boulevard Victor Bordier, 95370, France	48.990842	2.202017	mounir.amraoui@loxam.fr	Petits engins
@@ -76,18 +76,18 @@ Loxam 	Lo	Corner Loxam - Castorama Clichy	75000	Paris	48,8534951	2,3483915	Île-
 Loxam 	Lo	Corner Loxam - Castorama Claye	77000	Claye Souilly	48,9986182	2,8504604	Île-de-France	France 	Rue Jean Monnet, 77410, France	48.95338792	2.663473612	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Daumesnil	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	139 avenue Daumesnil, 75012, France	48.8433004	2.3840137	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Beaubourg	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	52 rue Rambuteau, 75003, France	48.861547	2.3521334	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - LM Rosny	93000	Rosny Sous Bois	48,8716626	2,4875193	Île-de-France	France 	7 rue De Lisbonne - Zac De Nanteuil, 93110, France	48.88046	2.473529	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - LM Rosny	93000	Rosny-sous-Bois	48,8716626	2,4875193	Île-de-France	France 	7 rue De Lisbonne - Zac De Nanteuil, 93110, France	48.88046	2.473529	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Madeleine	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	Place de La Madeleine, 75008, France	48.87010945	2.323955075	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Mr.Bricolage Achères	78000	Acheres	48,9606321	2,0698106	Île-de-France	France 	Rue W.A. Mozart - ZAC Chemin neuf, 78260, France	48.971799	2.090038	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Mr.Bricolage Achères	78000	Achères	48,9606321	2,0698106	Île-de-France	France 	Rue W.A. Mozart - ZAC Chemin neuf, 78260, France	48.971799	2.090038	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Rosa Parks	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	159 boulevard Macdonald, 75019, France	48.8989112	2.3770354	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Trappes	78000	Trappes	48,7760957	1,9988356	Île-de-France	France 	50 Rue Roger Hennequin, 78190, France	48.763755	1.983843	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Chelles	77000	Chelles	48,8783804	2,590549	Île-de-France	France 	44 Avenue De La Trentaine, 77500, France	48.869055	2.601681	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Montereau	77000	Montereau-fault-yonne	48,3849647	2,9557006	Île-de-France	France 	12 Rue Des Clomarts, 77130, France	48.387783	2.968121	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Casto Clayes sous Bois	78000	Les Clayes sous Bois	48,8214478	1,9871825	Île-de-France	France 	ZI du Chemin des Eaux, 78340, France	48.818641	1.98406	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Casto Clayes sous Bois	78000	les Clayes-sous-Bois	48,8214478	1,9871825	Île-de-France	France 	ZI du Chemin des Eaux, 78340, France	48.818641	1.98406	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Casto Ormesson	94000	CHENNEVIERES SUR MARNE	48,7965001	2,530442	Île-de-France	France 	CC Pince Vent - ZAC De L'Hippodrome, 94430, France	48.79765	2.541576	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Casto Coignières	78000	COIGNIERES-MAUREPAS	48,7671468	1,9193679	Île-de-France	France 	Rue des Louveries - RN 10, 78310, France	48.75152763	1.926228126	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Casto Pierrelaye	95000	Pierrelaye	49,0232238	2,1557343	Île-de-France	France 	ZAC Butte Petites Vignes, 95480, France	49.019728	2.161272	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Casto Cormeilles	95000	Cormeilles en Parisis	48,9759637	2,1998877	Île-de-France	France 	ZAC Bois Rochefort - Bd Joffre, 95240, France	48.968225	2.199214	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Casto Cormeilles	95000	Cormeilles-en-Parisis	48,9759637	2,1998877	Île-de-France	France 	ZAC Bois Rochefort - Bd Joffre, 95240, France	48.968225	2.199214	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Auriol	75000	Paris	48,8534951	2,3483915	Île-de-France	France 	120, boulevard Vincent Auriol, 75013, France	48.83338	2.3627273	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Casto Levallois	92000	Levallois-Perret	48,892956	2,2881683	Île-de-France	France 	4 rue Henri Barbusse, 92300, France	48.8911947	2.2904283	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Saint-Denis	93000	Saint-Denis	48,9383732	2,3627508	Île-de-France	France 	rue Henri Delaunay - Zac Cornillon, 93200, France	48.93395	2.359445	mounir.amraoui@loxam.fr	Petits engins
@@ -99,16 +99,16 @@ Loxam 	Lo	Loxam City Boulogne	92000	Boulogne-Billancourt	48,8356649	2,240206	Îl
 Loxam 	Lo	Loxam Access Paris Nord Mitry	77000	Mitry-Mory	48,9839674	2,6183971	Île-de-France	France	7 Rue René Cassin, 77290, France	48.9835	2.6184	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Bricorama Viry	91000	Viry-Châtillon	48.67211	2.39318	Île-de-France	France	106-108 Avenue du Général de Gaulle, 91170, France	48.6716	2.3774	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Bricorama Boulogne	92000	Boulogne-Billancourt	48,8356649	2,240206	Île-de-France	France	701 Avenue du Général Leclerc, 92100, France	48.8350	2.2389	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Weldom Carrières	78000	Carrieres sur Seine	48,9134112	2,1779083	Île-de-France	France	11 avenue du Maréchal Juin, 78420, France	48.9090	2.1895	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Weldom Carrières	78000	Carrières-sur-Seine	48,9134112	2,1779083	Île-de-France	France	11 avenue du Maréchal Juin, 78420, France	48.9090	2.1895	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Starmat Montreuil	93000	Montreuil	48,8623357	2,4412184	Île-de-France	France	188 boulevard de la Boissière, 93100, France	48.8647	2.4572	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Castorama Velizy	78000	Velizy-villacoublay	48,7809496	2,1900052	Île-de-France	France	Rue andré citroen - ZA VELIZY, 78140, France	48.7803	2.2092	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Castorama Velizy	78000	Vélizy-Villacoublay	48,7809496	2,1900052	Île-de-France	France	Rue andré citroen - ZA VELIZY, 78140, France	48.7803	2.2092	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	LOXAM City MIN Rungis	94000	Chevilly-Larue	48,7714153	2,3469255	Île-de-France	France	112 avenue de la Cité - Bâtiment H5, 94550, France	48.7485	2.3538	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Porte de Pantin	75000	Paris	48,8534951	2,3483915	Île-de-France	France	176 Avenue Jean Jaurès, 75019, France	48.8895	2.3921	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Wissous	91000	WISSOUS 	48,7316381	2,3268669	Île-de-France	France	31 avenue Ampère, 91320, France	48.7318	2.3277	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Paris 14è	75000	Paris	48,8534951	2,3483915	Île-de-France	France	132 avenue du Général Leclerc, 75014, France	48.8339	2.3258	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam City Nation	75000	Paris	48,8534951	2,3483915	Île-de-France	France	49 Rue des Pyrénées, 75020, France	48.8556	2.4023	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Leroy Merlin Osny	95000	Osny	49,0660487	2,0614598	Île-de-France	France	Ch. Du Poirier Charles Guérin - CC De L'Oseraie, 95520, France	49.0580	2.0604	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam Etampes	91000	etampes	48,4344621	2,1614464	Île-de-France	France	4 Avenue De La Sablière, 91150, France	48.4352	2.1620	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam Etampes	91000	Étampes	48,4344621	2,1614464	Île-de-France	France	4 Avenue De La Sablière, 91150, France	48.4352	2.1620	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Pierrelaye	95000	Pierrelaye	49,0232238	2,1557343	Île-de-France	France	2 Avenue Du Général Leclerc, 95480, France	49.0217	2.1553	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Mr.Bricolage Paris 14	75000	Paris	48,8534951	2,3483915	Île-de-France	France	68-80 Avenue du Maine - Ateliers Gaîté, 75014, France	48.8397	2.3215	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Leroy Merlin Gonesse	95000	Gonesse	48,9863555	2,4500537	Île-de-France	France	1 rond point De La Croix Saint-Benoît, 95500, France	48.9910	2.4495	mounir.amraoui@loxam.fr	Petits engins
@@ -117,13 +117,13 @@ Loxam 	Lo	Loxam City Porte des Lilas	75000	Paris	48,8534951	2,3483915	Île-de-Fr
 Loxam 	Lo	Loxam Sarcelle N1 (Groslay)	95000	Groslay	48,9867112	2,3458615	Île-de-France	France	1 Route Nationale de Paris à Calais (RN 1), 95410, France	48.9863	2.3489	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Lagny	77000	St thibault des vignes	48,8683837	2,6877273	Île-de-France	France	5 rue des Marmousets - ZI Courtillière, 77400, France	48.8712	2.6836	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Rental Villeneuve St Georges	94000	Villeneuve-Saint-Georges	48,7305272	2,44782	Île-de-France	France	Rue des Prés de l'Hôpital - ZI Graviers, 94194, France	48.7321	2.4493	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam Rental Conflans	78000	Conflans Sainte Honorine	48,9938791	2,0949768	Île-de-France	France	7 rue de l'Activité, 78700, France	48.9983	2.0956	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Loxam Rental Collegien	77000	Collegien	48,8362114	2,673176	Île-de-France	France	31 Allée du Clos des Charmes, 77090, France	48.8398	2.6754	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam Rental Conflans	78000	Conflans-Sainte-Honorine	48,9938791	2,0949768	Île-de-France	France	7 rue de l'Activité, 78700, France	48.9983	2.0956	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Loxam Rental Collegien	77000	Collégien	48,8362114	2,673176	Île-de-France	France	31 Allée du Clos des Charmes, 77090, France	48.8398	2.6754	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam Rental Gennevilliers Ouest	92000	Gennevilliers	48,9254221	2,2940122	Île-de-France	France	11, route Des Mercières, 92230, France	48.9279	2.2978	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Loxam TP Paris	77000	MOISSY CRAMAYEL	48,6285035	2,5703151	Île-de-France	France	210 Avenue Ampère - RN 6, 77550, France	48.6225	2.6013	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Melun - Cesson	77000	Cesson	48,5624381	2,6021145	Île-de-France	France	rue Du Bois Des Saints-Pères, 77240, France	48.5630	2.6065	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Weldom Carrières	78000	Carrieres sur Seine	48,9134112	2,1779083	Île-de-France	France	11 avenue du Maréchal Juin, 78420, France	48.9104	2.1787	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - Castorama Creteil	94000	Creteil	48,7771486	2,4530731	Île-de-France	France	70 Avenue du Maréchal Foch, 94000, France	48.7920	2.4530	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Weldom Carrières	78000	Carrières-sur-Seine	48,9134112	2,1779083	Île-de-France	France	11 avenue du Maréchal Juin, 78420, France	48.9104	2.1787	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - Castorama Creteil	94000	Créteil   	48,7771486	2,4530731	Île-de-France	France	70 Avenue du Maréchal Foch, 94000, France	48.7920	2.4530	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Castorama Fresnes	94000	Fresnes	48,7546687	2,3227967	Île-de-France	France	186 Parc Médicis, 94260, France	48.7565	2.3223	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - LM Mantes	78000	Buchelay	48,9793554	1,6716534	Île-de-France	France	232 av Du Béarn - Les Docks, 78200, France	48.9890	1.6805	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Beauvallet Blandine	91000	Guillerval	48,3745373	2,0599606	Île-de-France	France	Rue du Triquoir - ZAC de la Géode 2, 91690, France	48.3589	2.0662	mounir.amraoui@loxam.fr	Petits engins
@@ -135,34 +135,34 @@ Loxam 	Lo	Corner Loxam - Casto Villemomble	93000	Villemomble	48,881886	2,5076181
 Loxam 	Lo	Corner Loxam - Casto Les Ulis	91000	Les Ulis	48,681708	2,1701573	Île-de-France	France	6-8 avenue de L'Océanie, 91940, France	48.6810	2.1702	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Casto Les Lilas	93000	Les Lilas	48,8795658	2,415796	Île-de-France	France	15 boulevard de la Liberté, 93260, France	48.8789	2.4181	mounir.amraoui@loxam.fr	Petits engins
 Loxam 	Lo	Corner Loxam - Starmat Montreuil	93000	Montreuil	48,8623357	2,4412184	Île-de-France	France	188 boulevard de la Boissière, 93100, France	48.8778	2.4655	mounir.amraoui@loxam.fr	Petits engins
-Loxam 	Lo	Corner Loxam - LM Ivry-Sur-Seine	94000	Ivry Sur Seine	48,8122302	2,3872525	Île-de-France	France	2 - 12 rue François Mitterrand, 94200, France	48.8135	2.3837	mounir.amraoui@loxam.fr	Petits engins
+Loxam 	Lo	Corner Loxam - LM Ivry-Sur-Seine	94000	Ivry-sur-Seine	48,8122302	2,3872525	Île-de-France	France	2 - 12 rue François Mitterrand, 94200, France	48.8135	2.3837	mounir.amraoui@loxam.fr	Petits engins
 Point P	P.P	Point P	78000	Le Port Marly	48,8809876	2,109145	Île-de-France	France	21 rue Charles de Gaulle, 78560, France	48.888547	2.1033811	—	Fournitures
-Point P	P.P	Point P	78000	Saint Arnoult en Yvelines	48,572604	1,9350788	Île-de-France	France	13 rue Stourm, 78730, France	48.5672598	1.9307265	—	Fournitures
+Point P	P.P	Point P	78000	Saint-Arnoult-en-Yvelines	48,572604	1,9350788	Île-de-France	France	13 rue Stourm, 78730, France	48.5672598	1.9307265	—	Fournitures
 Point P	P.P	Point P	95000	Argenteuil	48,9479069	2,2481797	Île-de-France	France	35 rue Gode, 95100, France	48.958887	2.260479	—	Fournitures
 Point P	P.P	Point P	95000	Sarcelles	48,9960813	2,3796245	Île-de-France	France	42 route Calais, 95200, France	48.977414	2.365953	—	Fournitures
-Point P	P.P	Point P	95000	Sucy en Brie	48,7711323	2,5221284	Île-de-France	France	16 chemin Marais, 94370, France	48.76649918	2.504506044	—	Fournitures
+Point P	P.P	Point P	94000	Sucy-en-Brie	48,7711323	2,5221284	Île-de-France	France	16 chemin Marais, 94370, France	48.76649918	2.504506044	—	Fournitures
 Point P	P.P	Point P	78000	Sartrouville	48,9409016	2,1585037	Île-de-France	France	74 route Cormeilles, 78500, France	48.949575	2.181336	—	Fournitures
 Point P	P.P	Point P	78000	Maulette	48,7914601	1,6207519	Île-de-France	France	70 rue Vignes, 78550, France	48.7888101	1.6092475	—	Fournitures
 Point P	P.P	Point P	95000	Bezons	48,9250016	2,2105491	Île-de-France	France	17 rue Salvador Allende, 95870, France	48.918635	2.213353	—	Fournitures
-Point P	P.P	Point P	95000	Belloy en France	49,0892802	2,367884	Île-de-France	France	1 route Paris, 95270, France	49.0949425	2.3609029	—	Fournitures
+Point P	P.P	Point P	95000	Belloy-en-France	49,0892802	2,367884	Île-de-France	France	1 route Paris, 95270, France	49.0949425	2.3609029	—	Fournitures
 Point P	P.P	Point P	75000	Paris	48,8534951	2,3483915	Île-de-France	France	quai Bercy, 75012, France	48.8360572	2.378911124	—	Fournitures
 Point P	P.P	Point P	95000	Saint Ouen l’Aumône	49.04353	2.12134	Île-de-France	France	111 rue Paris, 95310, France	49.0372074	2.1203229	—	Fournitures
 Point P	P.P	Point P	75000	Paris	2.12134	2,3483915	Île-de-France	France	25 quai Ivry, 75013, France	48.826829	2.38596	—	Fournitures
-Point P	P.P	Point P	93000	Gournay sur Marne	48,8598434	2,576913	Île-de-France	France	rue Paris, 93460, France	48.852448	2.606985	—	Fournitures
-Point P	P.P	Point P	77000	Varennes sur Seine	48,3766097	2,9301414	Île-de-France	France	37 route Petit Fossard, 77130, France	48.367537	2.95738	—	Fournitures
+Point P	P.P	Point P	93000	Gournay-sur-Marne	48,8598434	2,576913	Île-de-France	France	rue Paris, 93460, France	48.852448	2.606985	—	Fournitures
+Point P	P.P	Point P	77000	Varennes-sur-Seine	48,3766097	2,9301414	Île-de-France	France	37 route Petit Fossard, 77130, France	48.367537	2.95738	—	Fournitures
 Point P	P.P	Point P	78000	Versailles	48,8035403	2,1266886	Île-de-France	France	11 rue Porte de Buc, 78000, France	48.7939511	2.1375488	—	Fournitures
-Point P	P.P	Point P	93000	Noisy le Sec	48,8897751	2,4516055	Île-de-France	France	75 rue Parc, 93130, France	48.890528	2.445421	—	Fournitures
-Point P	P.P	Point P	91000	Corbeil Essonnes	48,6137734	2,4818087	Île-de-France	France	53 quai Apport, 91100, France	48.61979665	2.475181036	—	Fournitures
+Point P	P.P	Point P	93000	Noisy-le-Sec	48,8897751	2,4516055	Île-de-France	France	75 rue Parc, 93130, France	48.890528	2.445421	—	Fournitures
+Point P	P.P	Point P	91000	Corbeil-Essonnes	48,6137734	2,4818087	Île-de-France	France	53 quai Apport, 91100, France	48.61979665	2.475181036	—	Fournitures
 Point P	P.P	Point P	93000	Montreuil	48,8623357	2,4412184	Île-de-France	France	24 rue Sorins, 93100, France	48.8588594	2.4286756	—	Fournitures
 Point P	P.P	Point P	77000	 ROISSY-EN-BRIE	48,7903787	2,6545195	Île-de-France	France	7 route Ozoir Bp 6, 77680, France	48.781857	2.658503	—	Fournitures
 Point P	P.P	Point P	91000	Arpajon	48,5902899	2,2477303	Île-de-France	France	1 route Limours, 91290, France	48.585599	2.244846	—	Fournitures
 Point P	P.P	Point P	77000	Perthes	48,4758593	2,555445	Île-de-France	France	58 rue Melun, 77930, France	48.479812	2.562286	—	Fournitures
-Point P	P.P	Point P	95000	Magny en Vexin	49,1554403	1,7864359	Île-de-France	France	Zi La Demi Lune route Mantes, 95420, France	49.133362	1.788989	—	Fournitures
+Point P	P.P	Point P	95000	Magny-en-Vexin	49,1554403	1,7864359	Île-de-France	France	Zi La Demi Lune route Mantes, 95420, France	49.133362	1.788989	—	Fournitures
 Point P	P.P	Point P	75000	Paris	48,8534951	2,3483915	Île-de-France	France	217 rue Aubervilliers, 75018, France	48.893563	2.330329	—	Fournitures
 Point P	P.P	Point P	91000	Massy	48,730158	2,2766735	Île-de-France	France	4 route Bonde, 91300, France	48.7213465	2.2804626	—	Fournitures
 Point P	P.P	Point P	78000	Buchelay	48,9793554	1,6716534	Île-de-France	France	5 rue Closeaux, 78200, France	48.9918874	1.6826855	—	Fournitures
 Point P	P.P	Point P	77000	Claye Souilly	48,9986182	2,8504604	Île-de-France	France	4 rue Ernest Sarron, 77410, France	48.9530773	2.6677215	—	Fournitures
-Point P	P.P	Point P	78000	Carrieres sous Poissy	48,9437694	2,0341747	Île-de-France	France	701 rue Reine Blanche, 78955, France	48.941329	2.030112	—	Fournitures
+Point P	P.P	Point P	78000	CARRIERES-SOUS-POISSY	48,9437694	2,0341747	Île-de-France	France	701 rue Reine Blanche, 78955, France	48.941329	2.030112	—	Fournitures
 Point P	P.P	Point P	91000	Maisse	48,3942835	2,3755851	Île-de-France	France	10 route Buno Bonneveaux, 91720, France	48.38935	2.388779	—	Fournitures
 Point P	P.P	Point P	75000	Paris	48,8534951	2,3483915	Île-de-France	France	port Javel Bas, 75015, France	48.840155	2.293559	—	Fournitures
 Point P	P.P	Point P	91000	Les Ulis	48,681708	2,1701573	Île-de-France	France	avenue Cap Horn, 91940, France	48.67592146	2.198079153	—	Fournitures
@@ -171,20 +171,20 @@ Point P	P.P	Point P	91000	Morangis	48,7022956	2,3367599	Île-de-France	France	15
 Point P	P.P	Point P	95000	Fosses	49,0986649	2,5161998	Île-de-France	France	2 rue Ferme St Ladre, 95470, France	49.0996817	2.5282791	—	Fournitures
 Point P	P.P	Point.P Paris 18	75000	Paris	48,8534951	2,3483915	Île-de-France	France	9 boulevard Ney, 75018, France	48.8983076	2.3662565	—	Fournitures
 Point P	P.P	Point P	93000	Villepinte	48,9636566	2,5347541	Île-de-France	France	100 avenue Paul Vaillant Couturier, 93420, France	48.959373	2.533651	—	Fournitures
-Point P	P.P	Point P	91000	Sainte Genevieve des Bois	48,6407872	2,3259129	Île-de-France	France	6 avenue Bout du Plessis, Zac Croix Blanche, 91700, France	48.621518	2.3438926	—	Fournitures
+Point P	P.P	Point P	91000	Sainte-Geneviève-des-Bois	48,6407872	2,3259129	Île-de-France	France	6 avenue Bout du Plessis, Zac Croix Blanche, 91700, France	48.621518	2.3438926	—	Fournitures
 Point P	P.P	Point P	93000	Saint-Denis-l'Etoile	48,880696	2,5695462	Île-de-France	France	47 boulevard Anatole France, 93200, France	48.925832	2.351154	—	Fournitures
 Point P	P.P	Point P	75000	Paris	48,8534951	2,3483915	Île-de-France	France	200 quai Jemmapes, 75010, France	48.88047	2.3690318	—	Fournitures
 Point P	P.P	Point P	91000	Saint Cheron	48,551177	2,1256363	Île-de-France	France	chemin Juiniere, 91530, France	48.55062336	2.114344476	—	Fournitures
-Point P	P.P	Point P	93000	Livry Gargan	48,917335	2,5298854	Île-de-France	France	51 boulevard Robert Schumann, 93190, France	49.048062	2.493414677	—	Fournitures
+Point P	P.P	Point P	93000	Livry-Gargan	48,917335	2,5298854	Île-de-France	France	51 boulevard Robert Schumann, 93190, France	49.048062	2.493414677	—	Fournitures
 Point P	P.P	Point P	95000	Pierrelaye	49,0232238	2,1557343	Île-de-France	France	256 boulevard Havre, Rte Nationale 14, 95480, France	49.004756	2.175392	—	Fournitures
-Point P	P.P	Point P Plateforme	95000	Conflans Sainte Honorine	48,9938791	2,0949768	Île-de-France	France	quai Confluent, 78700, France	49.00128407	2.072660939	—	Fournitures
-Point P	P.P	POINT P Beton	77000	Souppes sur Loing	48,1811405	2,7311751	Île-de-France	France	ZI route Egreville, 77460, France	48.179126	2.870871	—	Fournitures
+Point P	P.P	Point P Plateforme	78000	Conflans-Sainte-Honorine	48,9938791	2,0949768	Île-de-France	France	quai Confluent, 78700, France	49.00128407	2.072660939	—	Fournitures
+Point P	P.P	POINT P Beton	77000	Souppes-sur-Loing	48,1811405	2,7311751	Île-de-France	France	ZI route Egreville, 77460, France	48.179126	2.870871	—	Fournitures
 Point P	P.P	 POINT P SAINT MARD	77000	Saint Mard	49,0370716	2,694435	Île-de-France	France	rue Moutiers, 77260, France	48.80002767	2.9971352	—	Fournitures
 Raboni 	Ra	Raboni ATHIS	91000	Athis-Mons	48,7079878	2,3888044	Île-de-France	France	170 avenue François Mitterrand RN7 91200 Athis-Mons	48.7110	2.3715	—	Fournitures
 Raboni 	Ra	Raboni BEAUCHAMP	95000	Pierrelaye	49,0232238	2,1557343	Île-de-France	France	9 chemin du Parc 95480 Pierrelaye	49.0180719	2.1764392	—	Fournitures
 Raboni 	Ra	Raboni DAMMARIE	77000	Dammarie-les-Lys	48,5150876	2,6347018	Île-de-France	France	818 avenue Montaigne 77190 Dammarie-les-Lys	48.521842	2.633076	—	Fournitures
-Raboni 	Ra	Raboni  ETRECHY	91000	Etrechy	48,4936601	2,1945814	Île-de-France	France	5 route de Chamarande 91580 Etrechy	48.502961	2.201503	—	Fournitures
-Raboni 	Ra	Raboni IVRY	94000	Ivry Sur Seine	48,8122302	2,3872525	Île-de-France	France	25 quai Marcel Boyer 94200 Ivry-sur-Seine	48.8223377	2.3924309	—	Fournitures
+Raboni 	Ra	Raboni  ETRECHY	91000	Étréchy	48,4936601	2,1945814	Île-de-France	France	5 route de Chamarande 91580 Etrechy	48.502961	2.201503	—	Fournitures
+Raboni 	Ra	Raboni IVRY	94000	Ivry-sur-Seine	48,8122302	2,3872525	Île-de-France	France	25 quai Marcel Boyer 94200 Ivry-sur-Seine	48.8223377	2.3924309	—	Fournitures
 Raboni 	Ra	Raboni LA COURNEUVE	93000	La Courneuve	48,9267236	2,3896123	Île-de-France	France	58 avenue Jean Mermoz 93120 La Courneuve	48.932188	2.40471	—	Fournitures
 Raboni 	Ra	Raboni LE PECQ	78000	Le Pecq	48,8972505	2,1066273	Île-de-France	France	60 route de Sartrouville 78230 Le Pecq	48.903268	2.114946	—	Fournitures
 Raboni 	Ra	Raboni MENNECY	91000	Mennecy	48,5666645	2,4347044	Île-de-France	France	26 rue de Tournenfils 91540 Mennecy	48.570072	2.450969	—	Fournitures
@@ -193,7 +193,7 @@ Raboni 	Ra	Raboni PANTIN	75000	Paris	48,8534951	2,3483915	Île-de-France	France	
 Raboni 	Ra	Raboni PARIS LECLAIRE	75000	Paris	48,8534951	2,3483915	Île-de-France	France	7 rue Jean Leclaire 75017 Paris	48.8940119	2.325599	—	Fournitures
 Raboni 	Ra	Raboni PARIS ROQUETTE	75000	Paris	48,8534951	2,3483915	Île-de-France	France	52 rue de la Roquette 75011 Paris	48.8548662	2.3731539	—	Fournitures
 Raboni 	Ra	Raboni PUISEUX	95000	Puiseux-Pontoise	49,0578349	2,0205371	Île-de-France	France	Route de Boissy l'Aillerie 95650 Puiseux-Pontoise	49.05880461	2.019470501	—	Fournitures
-Raboni 	Ra	Raboni VARENNES	77000	Varennes sur Seine	48,3766097	2,9301414	Île-de-France	France	Rue du Marais du Saule 77130 Varennes-sur-Seine	48.37028094	2.941702608	—	Fournitures
+Raboni 	Ra	Raboni VARENNES	77000	Varennes-sur-Seine	48,3766097	2,9301414	Île-de-France	France	Rue du Marais du Saule 77130 Varennes-sur-Seine	48.37028094	2.941702608	—	Fournitures
 Raboni 	Ra	Raboni VILLEJUIF	94000	Villejuif	48,7921098	2,3633048	Île-de-France	France	81-87 rue Ambroise Croizat 94800 Villejuif	48.801187	2.3581796	—	Fournitures
 Cemex	Cem	Cemex Agence Aulnay sous Bois	93000	AULNAY SOUS BOIS	48,934231	2,499789	Île-de-France	France	20, RUE BLAISE PASCAL, ZA LES MARDELLES, 93600 AULNAY-SOUS-BOIS	48.949876	2.481682	—	Beton
 Cemex	Cem	Cemex Agence Chennevieres	94000	CHENNEVIERES SUR MARNE	48,7965001	2,530442	Île-de-France	France	ZONE DES BORDES, 13 BIS RUE CONDORCET, 94430 CHENNEVIERES-SUR-MARNE	48.796306	2.545022	—	Beton
@@ -224,7 +224,7 @@ Cemex	Cem	Cemex Port de Saint-Denis-l'Etoile	93000	Saint-Denis-l'Etoile	48,88069
 Cemex	Cem	Cemex Port d’Aubervilliers	93000	Aubervilliers	48,9146078	2,3821895	Île-de-France	France	Quai Lucien Lefranc, 93300 Aubervilliers, France	48.90942433	2.374871306	—	Beton
 Cemex	Cem	Cemex Port d’Evry	91000	Evry	48,6241665	2,4289667	Île-de-France	France	38 route des Paveurs, 91000 Evry, France	48.62796432	2.462402642	—	Beton
 Cemex	Cem	Cemex Port de Tolbiac	75000	Paris	48,8534951	2,3483915	Île-de-France	France	70 quai Panhard et Levassor, 75013 Paris, France	48.8308663	2.3813099	—	Beton
-Cemex	Cem	Cemex Port d’Ivry	94000	Ivry Sur Seine	48,8122302	2,3872525	Île-de-France	France	3 Quai Marcel Boyer, 94200 Ivry-sur-Seine, France	48.82487	2.389281	—	Beton
+Cemex	Cem	Cemex Port d’Ivry	94000	Ivry-sur-Seine	48,8122302	2,3872525	Île-de-France	France	3 Quai Marcel Boyer, 94200 Ivry-sur-Seine, France	48.82487	2.389281	—	Beton
 Cemex	Cem	Cemex Port de Bercy	75000	Paris	48,8534951	2,3483915	Île-de-France	France	1 quai de Bercy, 75012 Paris, France	48.83158659	2.384735682	—	Beton
 Cemex	Cem	Cemex Unite de production beton de Gennevilliers	92000	Gennevilliers	48,9254221	2,2940122	Île-de-France	France	5 Route annexe de la Seine, 92230 Gennevilliers, France	48.94223	2.292504	—	Beton
 CAUPAMAT CADENZ	CAUP	Caddenz Palissades Orly	94000	ORLY	48,7431683	2,402391	Île-de-France	France	40 Rue du Kéfir, 94310 Orly	48.7490	2.3920	—	Marquage /Balisage 
@@ -269,13 +269,13 @@ Fransbonhomme	Frans	Fransbonhomme	78000	Les Mureaux	48,9931578	1,909928	Île-de-
 Fransbonhomme	Frans	Fransbonhomme	77000	Lagny-sur-Marne	48,8773018	2,7056056	Île-de-France	France	135 rue Freycinet, 77400 Lagny-sur-Marne, France	48.8770	2.7070	—	Fournitures
 Fransbonhomme	Frans	Fransbonhomme	92000	Gennevilliers	48,9254221	2,2940122	Île-de-France	France	110 avenue Général de Gaulle, 92230 Gennevilliers, France	48.9333	2.3000	—	Fournitures
 Fransbonhomme	Frans	Fransbonhomme	77000	Montereau-Fault-Yonne	48,3849647	2,9557006	Île-de-France	France	2 rue Clomarts, 77130 Montereau-Fault-Yonne, France	48.3833	2.9500	—	Fournitures
-Fransbonhomme	Frans	Fransbonhomme	91000	Fleury-Merogis	48,629965	2,3609313	Île-de-France	France	Rue Adrienne Bolland ZAC des Ciroliers 91700 Fleury-Mérogis France	48.6320	2.3640	—	Fournitures
+Fransbonhomme	Frans	Fransbonhomme	91000	Fleury-Mérogis	48,629965	2,3609313	Île-de-France	France	Rue Adrienne Bolland ZAC des Ciroliers 91700 Fleury-Mérogis France	48.6320	2.3640	—	Fournitures
 Fransbonhomme	Frans	Fransbonhomme	77000	Meaux	48,9582708	2,8773541	Île-de-France	France	8 rue Thomas Edison ZI Nord 77100 Meaux France	48.964354	2.916562	—	Fournitures
 Fransbonhomme	Frans	Fransbonhomme	95000	Goussainville	49,0323168	2,4733628	Île-de-France	France	Rue Jean Pierre Timbaud 95190 Goussainville France	49.0207	2.4463	—	Fournitures
 BSM	BSM	BSM	77000	Lognes	48,8384157	2,632722	Île-de-France	France	9 allée Lech Walesa - Zac du Parc d'activités de Paris-Est	48.814	2.663	—	Beton
 BSM	BSM	BSM	78000	Limay	48,9921015	1,7353686	Île-de-France	France	Ducas 291 Avenue Daniel Dreyfous	48.991	1.693	—	Beton
 BSM	BSM	BSM	78000	Thiverval-Grignon	48,8418686	1,9342972	Île-de-France	France	Chemin des Nourrices	48.849	1.950	—	Beton
-BSM	BSM	BSM	91000	Saint-Germain-les-Arpajon	48,5948294	2,2557107	Île-de-France	France	Chemin des Cinquante Arpents, 3 Rue Henri Rol Tanguy	48.625	2.275	—	Beton
+BSM	BSM	BSM	91000	Saint-Germain-lès-Arpajon	48,5948294	2,2557107	Île-de-France	France	Chemin des Cinquante Arpents, 3 Rue Henri Rol Tanguy	48.625	2.275	—	Beton
 BSM	BSM	BSM	91000	Bretigny-sur-Orge	48,6099887	2,3075288	Île-de-France	France	Rue de la Desserte Industrielle	48.611	2.309	—	Beton
 BSM	BSM	BSM	92000	Nanterre	48,8924273	2,2071267	Île-de-France	France	Electrique Chemin d'Accès à L'Usine	48.889	2.206	—	Beton
 BSM	BSM	BSM	92000	Gennevilliers	48,9254221	2,2940122	Île-de-France	France	22 Chemin des Petits Marais	48.926	2.295	—	Beton
@@ -336,29 +336,29 @@ LARIVIERE	LA	LARIVIERE MALAKOFF	92000	Malakoff	48,819	2,299	Île-de-France	Franc
 LARIVIERE	LA	LARIVIERE PARIS 20	75000	Paris	48,8647	2,3984	Île-de-France	France	58 boulevard de Charonne, 75020 Paris	48.8647	2.3984	—	Fournitures
 LARIVIERE	LA	LARIVIERE PANTIN	93000	Pantin	48,8956	2,4017	Île-de-France	France	67 avenue du Général Leclerc, 93500 Pantin	48.8956	2.4017	—	Fournitures
 LARIVIERE	LA	LARIVIERE CHELLES	77000	Chelles	48,8811	2,582	Île-de-France	France	54 rue Belle Île, 77507 Chelles	48.8811	2.5820	—	Fournitures
-LARIVIERE	LA	LARIVIERE MANTES LA JOLIE	78000	Epône	48,9543	1,8119	Île-de-France	France	ZA de la Couronne des Prés, Avenue de la Mauldre, 78680 Epône	48.9543	1.8119	—	Fournitures
+LARIVIERE	LA	LARIVIERE MANTES LA JOLIE	78000	Épône	48,9543	1,8119	Île-de-France	France	ZA de la Couronne des Prés, Avenue de la Mauldre, 78680 Epône	48.9543	1.8119	—	Fournitures
 LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	France	269 Chemin Jules César, 95250 Beauchamp	49.0167	2.2000	—	Fournitures
 			75000	Paris  	48,8608	2,3458	Île-de-France	France					
-			75000	Paris  10e arrondissement	48,8719	2,3574	Île-de-France	France					
-			75000	Paris 11e arrondissement	48,85846	2,37959	Île-de-France	France					
-			75000	Paris 12e arrondissement	48,84099	2,38794	Île-de-France	France					
-			75000	Paris13e arrondissement	48,83234	2,35551	Île-de-France	France					
-			75000	Paris 14e arrondissement	48,83292	2,3268	Île-de-France	France					
-			75000	Paris  15e arrondissement	48,84132	2,30024	Île-de-France	France					
-			75000	Paris 16e arrondissement	48,86278	2,27611	Île-de-France	France					
-			75000	Paris17e arrondissement	48,88435	2,32207	Île-de-France	France					
-			75000	Paris 18e arrondissement	48,89234	2,34455	Île-de-France	France					
-			75000	Paris 19e arrondissement	48,88277	2,38203	Île-de-France	France					
-			75000	Paris  1er arrondissement	48,85995	2,34206	Île-de-France	France					
-			75000	Paris 20e arrondissement	48,8651	2,39903	Île-de-France	France					
-			75000	Paris 2e arrondissement	48,86689	2,34047	Île-de-France	France					
-			75000	Paris  3e arrondissement	48,86403	2,36153	Île-de-France	France					
-			75000	Paris 4e arrondissement	48,85619	2,35568	Île-de-France	France					
-			75000	Paris 5e arrondissement	48,8462	2,34462	Île-de-France	France					
-			75000	Paris 6e arrondissement	48,85057	2,33273	Île-de-France	France					
-			75000	Paris 7e arrondissement	48,8569	2,31995	Île-de-France	France					
-			75000	Paris  8e arrondissement	48,87782	2,31781	Île-de-France	France					
-			75000	Paris  9e arrondissement	48,87248	2,34042	Île-de-France	France					
+			75000	Paris  	48,8719	2,3574	Île-de-France	France					
+			75000	Paris  	48,85846	2,37959	Île-de-France	France					
+			75000	Paris  	48,84099	2,38794	Île-de-France	France					
+			75000	Paris  	48,83234	2,35551	Île-de-France	France					
+			75000	Paris  	48,83292	2,3268	Île-de-France	France					
+			75000	Paris  	48,84132	2,30024	Île-de-France	France					
+			75000	Paris  	48,86278	2,27611	Île-de-France	France					
+			75000	Paris  	48,88435	2,32207	Île-de-France	France					
+			75000	Paris  	48,89234	2,34455	Île-de-France	France					
+			75000	Paris  	48,88277	2,38203	Île-de-France	France					
+			75000	Paris  	48,85995	2,34206	Île-de-France	France					
+			75000	Paris  	48,8651	2,39903	Île-de-France	France					
+			75000	Paris  	48,86689	2,34047	Île-de-France	France					
+			75000	Paris  	48,86403	2,36153	Île-de-France	France					
+			75000	Paris  	48,85619	2,35568	Île-de-France	France					
+			75000	Paris  	48,8462	2,34462	Île-de-France	France					
+			75000	Paris  	48,85057	2,33273	Île-de-France	France					
+			75000	Paris  	48,8569	2,31995	Île-de-France	France					
+			75000	Paris  	48,87782	2,31781	Île-de-France	France					
+			75000	Paris  	48,87248	2,34042	Île-de-France	France					
 			77000	Achères-la-Forêt	48,35361	2,57028	Île-de-France	France					
 			77000	Amillis	48,74028	3,13056	Île-de-France	France					
 			77000	Amponville	48,27889	2,52944	Île-de-France	France					
@@ -472,7 +472,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			77000	Chevry-en-Sereine	48,25278	2,94361	Île-de-France	France					
 			77000	Choisy-en-Brie	48,75889	3,21944	Île-de-France	France					
 			77000	Citry	48,96806	3,24083	Île-de-France	France					
-			77000	Claye-Souilly	48,94333	2,68861	Île-de-France	France					
+			77000	Claye Souilly	48,94333	2,68861	Île-de-France	France					
 			77000	Clos-Fontaine	48,60722	3,01722	Île-de-France	France					
 			77000	Cocherel	49,02083	3,10194	Île-de-France	France					
 			77000	Collégien	48,83833	2,67139	Île-de-France	France					
@@ -644,7 +644,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			77000	Misy-sur-Yonne	48,36	3,09194	Île-de-France	France					
 			77000	Mitry-Mory	48,98333	2,61778	Île-de-France	France					
 			77000	Moisenay	48,56278	2,73611	Île-de-France	France					
-			77000	Moissy-Cramayel	48,62722	2,59444	Île-de-France	France					
+			77000	MOISSY CRAMAYEL	48,62722	2,59444	Île-de-France	France					
 			77000	Mondreville	48,14194	2,61056	Île-de-France	France					
 			77000	Mons-en-Montois	48,48889	3,14722	Île-de-France	France					
 			77000	Montceaux-lès-Meaux	48,94278	2,98722	Île-de-France	France					
@@ -691,7 +691,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			77000	Oissery	49,06972	2,81889	Île-de-France	France					
 			77000	Orly-sur-Morin	48,90445	3,23028	Île-de-France	France					
 			77000	les Ormes-sur-Voulzie	48,46278	3,22861	Île-de-France	France					
-			77000	Ormesson	48,24333	2,65472	Île-de-France	France					
+			77000	Paris  	48,24333	2,65472	Île-de-France	France					
 			77000	Othis	49,07556	2,67611	Île-de-France	France					
 			77000	Ozoir-la-Ferrière	48,76167	2,67278	Île-de-France	France					
 			77000	Ozouer-le-Voulgis	48,66028	2,77472	Île-de-France	France					
@@ -824,7 +824,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			77000	Vaucourtois	48,89639	2,95306	Île-de-France	France					
 			77000	le Vaudoué	48,35611	2,52028	Île-de-France	France					
 			77000	Vaudoy-en-Brie	48,68833	3,08139	Île-de-France	France					
-			77000	Vaux-le-Pénil	48,52639	2,685	Île-de-France	France					
+			77000	VAUX-LE-PENIL	48,52639	2,685	Île-de-France	France					
 			77000	Vaux-sur-Lunain	48,22583	2,93806	Île-de-France	France					
 			77000	Vendrest	49,04556	3,095	Île-de-France	France					
 			77000	Verdelot	48,87556	3,36806	Île-de-France	France					
@@ -909,7 +909,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			78000	Buc	48,77361	2,1275	Île-de-France	France					
 			78000	Buchelay	48,98028	1,67139	Île-de-France	France					
 			78000	Bullion	48,62194	1,99667	Île-de-France	France					
-			78000	Carrières-sous-Poissy	48,94111	2,02083	Île-de-France	France					
+			78000	CARRIERES-SOUS-POISSY	48,94111	2,02083	Île-de-France	France					
 			78000	Carrières-sur-Seine	48,91472	2,18639	Île-de-France	France					
 			78000	la Celle-les-Bordes	48,63528	1,95472	Île-de-France	France					
 			78000	la Celle-Saint-Cloud	48,84111	2,13444	Île-de-France	France					
@@ -1060,7 +1060,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			78000	Poissy	48,93139	2,04972	Île-de-France	France					
 			78000	Ponthévrard	48,55139	1,91278	Île-de-France	France					
 			78000	Porcheville	48,97055	1,78	Île-de-France	France					
-			78000	le Port-Marly	48,87861	2,10889	Île-de-France	France					
+			78000	Le Port Marly	48,87861	2,10889	Île-de-France	France					
 			78000	Prunay-en-Yvelines	48,5275	1,79611	Île-de-France	France					
 			78000	Prunay-le-Temple	48,86222	1,67361	Île-de-France	France					
 			78000	la Queue-les-Yvelines	48,80639	1,7675	Île-de-France	France					
@@ -1153,7 +1153,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			91000	Boutervilliers	48,45306	2,05694	Île-de-France	France					
 			91000	Boutigny-sur-Essonne	48,43694	2,37833	Île-de-France	France					
 			91000	Bouville	48,43278	2,285	Île-de-France	France					
-			91000	Brétigny-sur-Orge	48,61056	2,30889	Île-de-France	France					
+			91000	Boutigny-sur-Essonne	48,61056	2,30889	Île-de-France	France					
 			91000	Breuillet	48,56694	2,17056	Île-de-France	France					
 			91000	Breux-Jouy	48,56139	2,17639	Île-de-France	France					
 			91000	Brières-les-Scellés	48,45722	2,13944	Île-de-France	France					
@@ -1356,7 +1356,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			92000	Ville-d'Avray	48,82806	2,19083	Île-de-France	France					
 			92000	Villeneuve-la-Garenne	48,93472	2,32861	Île-de-France	France					
 			93000	Aubervilliers	48,91306	2,38306	Île-de-France	France					
-			93000	Aulnay-sous-Bois	48,93861	2,49056	Île-de-France	France					
+			93000	AULNAY SOUS BOIS	48,93861	2,49056	Île-de-France	France					
 			93000	Bagnolet	48,86917	2,41806	Île-de-France	France					
 			93000	le Blanc-Mesnil	48,93417	2,4675	Île-de-France	France					
 			93000	Bobigny   	48,90778	2,44194	Île-de-France	France					
@@ -1384,7 +1384,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			93000	le Pré-Saint-Gervais	48,88528	2,40361	Île-de-France	France					
 			93000	le Raincy	48,89722	2,51917	Île-de-France	France					
 			93000	Romainville	48,88083	2,44028	Île-de-France	France					
-			93000	Rosny-sous-Bois	48,87556	2,48194	Île-de-France	France					
+			93000	Paris  	48,87556	2,48194	Île-de-France	France					
 			93000	Saint-Denis	48,93056	2,35556	Île-de-France	France					
 			93000	Saint-Ouen	48,90917	2,33722	Île-de-France	France					
 			93000	Sevran	48,94056	2,52389	Île-de-France	France					
@@ -1403,7 +1403,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			94000	Cachan	48,795	2,32861	Île-de-France	France					
 			94000	Champigny-sur-Marne	48,81861	2,5075	Île-de-France	France					
 			94000	Charenton-le-Pont	48,82361	2,40556	Île-de-France	France					
-			94000	Chennevières-sur-Marne	48,80111	2,52806	Île-de-France	France					
+			94000	CHENNEVIERES SUR MARNE	48,7965001	2,530442	Île-de-France	France					
 			94000	Chevilly-Larue	48,77306	2,35278	Île-de-France	France					
 			94000	Choisy-le-Roi	48,76444	2,40861	Île-de-France	France					
 			94000	Créteil   	48,79333	2,46083	Île-de-France	France					
@@ -1421,7 +1421,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			94000	Nogent-sur-Marne	48,83833	2,48333	Île-de-France	France					
 			94000	Noiseau	48,77667	2,55111	Île-de-France	France					
 			94000	Orly	48,74667	2,40389	Île-de-France	France					
-			94000	Ormesson-sur-Marne	48,78944	2,53889	Île-de-France	France					
+			94000	Paris  	48,78944	2,53889	Île-de-France	France					
 			94000	Périgny	48,69556	2,55056	Île-de-France	France					
 			94000	le Perreux-sur-Marne	48,84111	2,50528	Île-de-France	France					
 			94000	le Plessis-Trévise	48,8125	2,56694	Île-de-France	France					
@@ -1530,7 +1530,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			95000	Herblay	48,99389	2,16028	Île-de-France	France					
 			95000	Hérouville	49,10056	2,13306	Île-de-France	France					
 			95000	Hodent	49,14472	1,77	Île-de-France	France					
-			95000	l'Isle-Adam	49,10944	2,22167	Île-de-France	France					
+			95000	L'Isle Adam	49,10944	2,22167	Île-de-France	France					
 			95000	Jagny-sous-Bois	49,0775	2,44306	Île-de-France	France					
 			95000	Jouy-le-Moutier	49,01639	2,04639	Île-de-France	France					
 			95000	Labbeville	49,13445	2,14528	Île-de-France	France					
@@ -1593,7 +1593,7 @@ LARIVIERE	LA	LARIVIERE BEAUCHAMP	95000	Beauchamp	49,0167	2,2	Île-de-France	Fran
 			95000	Saint-Gratien	48,97472	2,28667	Île-de-France	France					
 			95000	Saint-Leu-la-Forêt	49,01444	2,24389	Île-de-France	France					
 			95000	Saint-Martin-du-Tertre	49,10695	2,34861	Île-de-France	France					
-			95000	Saint-Ouen-l'Aumône	49,04194	2,11222	Île-de-France	France					
+			95000	 SAINT-OUEN-L'AUMONE	49,04194	2,11222	Île-de-France	France					
 			95000	Saint-Prix	49,00917	2,26278	Île-de-France	France					
 			95000	Saint-Witz	49,09195	2,56889	Île-de-France	France					
 			95000	Sannois	48,97472	2,25583	Île-de-France	France					
